@@ -28,8 +28,9 @@
     color: $light-teal;
   }
   input {
-    outline: none;
+    box-shadow: none !important;
     text-align: center;
+    color: $light-teal;
     background-color: $dark-grey;
     @extend .no-border;
   }
