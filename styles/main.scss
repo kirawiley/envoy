@@ -1,1 +1,55 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "_colors";
+@import "_variables";
+@import "_layout";
+@import "_utilities";
+@import "_base";
+
+.navigation {
+  width: 100%;
+  height: 60px;
+  background-color: $transparent-black;
+}
+
+.nav.navbar-nav li a {
+  color: $white;
+}
+
+.navbar {
+  background-color: transparent;
+  @extend .no-border;
+}
+
+.navbar-form {
+  span {
+    padding: 2.5px;
+    padding-left: 12px;
+    background-color: $dark-grey;
+    color: $light-teal;
+  }
+  input {
+    box-shadow: none !important;
+    text-align: center;
+    color: $light-teal;
+    background-color: $dark-grey;
+    @extend .no-border;
+  }
+  input::placeholder {
+    color: $light-teal;
+  }
+  button {
+    font-size: $button-font;
+    color: $white;
+    font-weight: bold;
+    background-color: $red-orange;
+    @extend .no-border;
+  }
+}
+
+.nav.navbar-nav li a:hover {
+  color: $grey;
+}
+
+.nav.navbar-nav li a.active {
+  color: $red-orange;
+}
