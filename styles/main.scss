@@ -46,37 +46,61 @@
   }
 }
 
-.nav.navbar-nav li a:hover {
-  color: $grey;
-}
+.nav.navbar-nav li {
+  a:hover {
+    color: $grey;
+  }
 
-.nav.navbar-nav li a.active {
-  color: $red-orange;
+  a.active {
+    color: $red-orange;
+  }
 }
 
 #jumbotron {
   z-index: -1;
 }
 
-.slick-dots li {
-  width: 10px;
-  height: 10px;
-  border: 1px $white solid;
-  background-color: $white;
-  @extend .circular;
+.slick-dots {
+  li {
+    width: 10px;
+    height: 10px;
+    border: 1px $white solid;
+    background-color: $white;
+    @extend .circular;
+  }
+
+  li:hover {
+    border: 3px pink solid;
+  }
+
+  li button {
+    display: none;
+  }
+
+  li.slick-active {
+    border: 1px $red-orange solid;
+    background-color: $red-orange;
+    @extend .circular;
+    z-index: 1;
+  }
 }
 
-.slick-dots li:hover {
-  border: 3px pink solid;
-}
+#intro {
+  width: 100vw;
+  height: 500px;
+  background-color: $light-black;
 
-.slick-dots li button {
-  display: none;
-}
+  h1 {
+    color: $white;
+    font-weight: bold;
+  }
 
-.slick-dots li.slick-active {
-  border: 1px $red-orange solid;
-  background-color: $red-orange;
-  @extend .circular;
-  z-index: 1;
+  span {
+    color: $red-orange;
+  }
+
+  .col-lg-12 {
+    border-bottom: 5px $darker-grey solid;
+  }
+
 }
