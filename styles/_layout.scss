@@ -8,11 +8,21 @@
 
 .navbar-form {
   border: none;
-  
+
   input {
     margin-left: 5px;
   }
   span {
     position: absolute;
   }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+}
+
+#jumbotron {
+  position: relative;
+  top: -60px;
 }
