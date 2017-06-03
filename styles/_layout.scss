@@ -30,8 +30,55 @@
 #intro {
   margin-top: -92px;
 
+  .col-lg-12 {
+    padding: 0;
+  }
+
   h1 {
-    padding: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     margin-top: 20px;
   }
+
+  h3 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+#featured-work {
+  margin-top: 20px;
+}
+
+#detail-1 {
+  position: absolute;
+  top: 13%;
+  left: 30%;
+  width: 35% !important;
+}
+
+#detail-2 {
+  position: absolute;
+  top: 34.5%;
+  left: 23%;
+  bottom: 1px;
+  width: 23% !important;
+}
+
+#detail-3 {
+  position: absolute;
+  top: 13%;
+  left: 74%;
+  width: 21% !important;
+}
+
+#always-be-ready {
+  width: 70% !important;
+  position: absolute;
+  top: 25%;
+  left: 15%;
 }

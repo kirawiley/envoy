@@ -87,20 +87,57 @@
 
 #intro {
   width: 100vw;
-  height: 500px;
   background-color: $light-black;
 
   h1 {
     color: $white;
     font-weight: bold;
-  }
 
-  span {
-    color: $red-orange;
+    span {
+      color: $red-orange;
+    }
   }
 
   .col-lg-12 {
     border-bottom: 5px $darker-grey solid;
   }
 
+  h3 {
+    color: $grey;
+
+    a {
+      font-size: 14px;
+      color: $red-orange;
+    }
+  }
+
+  .row {
+    border-bottom: 2px $darker-grey solid;
+  }
+}
+
+#featured-work {
+  .thumbnail {
+    padding: 0;
+    background-color: transparent;
+    @extend .no-border;
+  }
+
+  .caption {
+    color: $white;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    color: $red-orange;
+    font-weight: bold;
+  }
+
+  span {
+    color: $light-teal;
+  }
 }
