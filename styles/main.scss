@@ -69,10 +69,6 @@
     @extend .circular;
   }
 
-  li:hover {
-    border: 3px pink solid;
-  }
-
   li button {
     display: none;
   }
