@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "_colors";
-@import "_variables";
 @import "_layout";
 @import "_utilities";
 @import "_base";
@@ -27,6 +26,7 @@
     background-color: $dark-grey;
     color: $light-teal;
   }
+
   input {
     box-shadow: none !important;
     text-align: center;
@@ -34,11 +34,13 @@
     background-color: $dark-grey;
     @extend .no-border;
   }
+
   input::placeholder {
     color: $light-teal;
   }
+
   button {
-    font-size: $button-font;
+    font-size: 16px;
     color: $white;
     font-weight: bold;
     background-color: $red-orange;
@@ -67,10 +69,6 @@
     border: 1px $white solid;
     background-color: $white;
     @extend .circular;
-  }
-
-  li:hover {
-    border: 3px pink solid;
   }
 
   li button {
@@ -110,22 +108,21 @@
       color: $red-orange;
     }
   }
+}
 
-  .row {
-    border-bottom: 2px $darker-grey solid;
-  }
+.title {
+  border-bottom: 2px $darker-grey solid;
+}
+
+.thumbnail {
+  padding: 0;
+  background-color: transparent;
+  @extend .no-border;
 }
 
 #featured-work {
-  .thumbnail {
-    padding: 0;
-    background-color: transparent;
-    @extend .no-border;
-  }
-
   .caption {
-    color: $white;
-    padding: 0;
+    @extend .caption-style;
   }
 
   img {
@@ -133,11 +130,25 @@
   }
 
   a {
-    color: $red-orange;
-    font-weight: bold;
+    @extend .link-style;
   }
 
   span {
     color: $light-teal;
+  }
+}
+
+#wire {
+  .caption {
+    @extend .caption-style;
+  }
+
+  a {
+    @extend .link-style;
+  }
+
+  h2:hover {
+    color: $light-teal;
+    cursor: pointer;
   }
 }
