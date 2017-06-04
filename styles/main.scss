@@ -22,6 +22,19 @@
   @extend .no-border;
 }
 
+.navbar-collapse[aria-expanded="true"] {
+  background-color: $transparent-black;
+
+  input {
+    width: 300px;
+  }
+
+  #tweets {
+    width: 100%;
+    height: 200px;
+  }
+}
+
 .navbar-form {
   span {
     padding: 2.5px;
