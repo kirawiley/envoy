@@ -2,7 +2,10 @@
 @import "_colors";
 @import "_layout";
 @import "_utilities";
-@import "_base";
+
+.invisible {
+  display: none;
+}
 
 .navigation {
   width: 100%;
@@ -58,6 +61,24 @@
   }
 }
 
+#tweets {
+  width: 35%;
+  height: 450px;
+  padding: 10px;
+  padding-top: 0;
+  color: $white;
+  background-color: $red-orange;
+
+  p {
+    color: $light-grey;
+    font-weight: bold;
+  }
+
+  a {
+    color: $burgundy;
+  }
+}
+
 #jumbotron {
   z-index: -1;
 }
@@ -79,7 +100,6 @@
     border: 1px $red-orange solid;
     background-color: $red-orange;
     @extend .circular;
-    z-index: 1;
   }
 }
 
