@@ -6,17 +6,19 @@
   margin-top: 12px;
 }
 
-.navbar-collapse[aria-expanded="true"] {
-  button {
-    position: absolute;
-    top: 317px;
-    left: 325px;
-  }
+@media only screen and (max-width: 767px) {
+  .navbar-collapse[aria-expanded="true"] {
+    button {
+      position: absolute;
+      top: 317px;
+      left: 325px;
+    }
 
-  #tweets {
-    position: absolute;
-    top: 373px;
-    left: 0;
+    #tweets {
+      position: absolute;
+      top: 373px;
+      left: 0;
+    }
   }
 }
 
